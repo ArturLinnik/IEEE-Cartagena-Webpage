@@ -62,3 +62,9 @@ animation-name: slide-in;
     background-position: center;
     background-repeat: no-repeat;
   }
+
+body {
+background: url(img/bg-image2.jpg) no-repeat fixed;
+
+background-size: auto;
+}
