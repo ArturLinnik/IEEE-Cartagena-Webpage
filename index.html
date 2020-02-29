@@ -27,10 +27,19 @@
   </div>
 </header>
 
+<section id="section03" class="demo">
+  <a href="#page_content"><span></span></a>
+</section>
+
+<!-- <button>
+  <a href="#page_content" class="btn btn-secondary">Go to Google</a>
+</button> -->
+
+
 <!-- NAVIGATION -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav1">
   <div class="container ml-1">
-    <a class="navbar-brand" href="#home">
+    <a class="navbar-brand" href="#">
       <img src="img/ieee_logo.jpg" alt="IEEE logo" id="img_logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +48,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-1">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#page_content">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Features</a>
@@ -66,7 +75,7 @@
 
 
 <!-- Page Content -->
-<section class="py-5 text-white">
+<section class="py-5 text-white" id="page_content">
   <div class="container">
     <h2 class="font-weight-light">Page Content</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
@@ -74,8 +83,8 @@
 </section>
 
 <div class="container">
-  <div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
+  <div class="card border-0 shadow my-5" id="card">
+    <div class="card-body p-5 text-white" id="card_body">
       <h1 class="font-weight-light">Fixed Full Page Background Image</h1>
       <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!</p>
       <p class="lead">Scroll down...</p>
@@ -86,6 +95,36 @@
 </div>
 
     
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+
 
 
 
