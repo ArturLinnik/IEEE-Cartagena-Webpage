@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/header_img.css">
+    <link rel="stylesheet" type="text/css" href="css/slide_in_animation.css">
+    <link rel="stylesheet" type="text/css" href="css/scroll_down.css">
 
 </head>
 <body>
@@ -27,13 +30,9 @@
   </div>
 </header>
 
-<section id="section03" class="demo">
+<section id="scroll_down" class="demo">
   <a href="#page_content"><span></span></a>
 </section>
-
-<!-- <button>
-  <a href="#page_content" class="btn btn-secondary">Go to Google</a>
-</button> -->
 
 
 <!-- NAVIGATION -->
@@ -96,7 +95,6 @@
   </div>
 </div>
 
-    
 
 
 
@@ -105,37 +103,12 @@
 
 
 
+  <!-- Smooth scrolling -->
+  <script src="js/smooth_scroll.js" type="text/javascript"></script>
 
-
-
-<script>
-  // smooth scrolling
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-            });
-        });
-    });
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Bootstrap javascript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
